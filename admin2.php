@@ -28,7 +28,7 @@ $usHash = $_SERVER['PHP_AUTH_PW'];
 
 $user = 'u47548';
 $pass = '9673729';
-$db = new PDO('mysql:host=localhost;dbname=u47525', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+$db = new PDO('mysql:host=localhost;dbname=u47548', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
 
 $data = $db->query("SELECT * FROM adm WHERE login ='$usLogin' and hash ='$usHash'");
 $result = $data->fetchALL(PDO::FETCH_ASSOC);
@@ -50,7 +50,7 @@ print('Вы успешно авторизовались.');
 // *********
 $user = 'u47548';
 $pass = '9673729';
-$db = new PDO('mysql:host=localhost;dbname=u47525', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+$db = new PDO('mysql:host=localhost;dbname=u47548', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
 
 $data = $db->query("SELECT * FROM application2");
 $result = $data->fetchALL(PDO::FETCH_ASSOC);
